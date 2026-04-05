@@ -81,7 +81,7 @@ Before running the project, ensure you have:
 3. **Setup environment variables**
    ```bash
    PORT=5000
-   MONGO_URI=mongodb://127.0.0.1:27017/finance-db
+   MONGO_URI=mongodb+srv://ranjanharsh85_db_user:<db_password>@cluster0.q1292fi.mongodb.net/
    JWT_SECRET=your_secret_key
    ```
 
