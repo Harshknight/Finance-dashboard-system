@@ -1,4 +1,3 @@
-// src/models/record.model.js
 import mongoose from "mongoose";
 
 const recordSchema = new mongoose.Schema(

@@ -1,4 +1,3 @@
-// src/routes/record.routes.js
 import express from "express";
 import {
   createRecord,
@@ -9,7 +8,8 @@ import {
 import { auth } from "../middleware/auth.middleware.js";
 import { authorizeRoles } from "../middleware/role.middleware.js";
 import { validate } from "../middleware/error.middleware.js";
-import { recordSchema } from "../utils/validator.js";
+import { recordSchema ,
+  updateRecordSchema,} from "../utils/validator.js";
 
 const router = express.Router();
 

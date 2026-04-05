@@ -1,4 +1,4 @@
-// src/controllers/record.controller.js
+
 import Record from "../models/record.model.js";
 
 export const createRecord = async (req, res) => {

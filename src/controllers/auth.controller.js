@@ -1,4 +1,3 @@
-// src/controllers/auth.controller.js
 import User from "../models/user.model.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
@@ -24,8 +23,9 @@ export const register = async (req, res) => {
 
     res.status(201).json({ message: "User registered" });
   } catch (err) {
-    res.status(500).json({ message: "Server Error" });
-  }
+  console.error("REGISTER ERROR:", err); // 👈 ADD THIS
+  res.status(500).json({ message: err.message }); // optional (for debug)
+}
 };
 
 export const login = async (req, res) => {

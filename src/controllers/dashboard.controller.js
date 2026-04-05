@@ -1,4 +1,3 @@
-// src/controllers/dashboard.controller.js
 import Record from "../models/record.model.js";
 
 export const getSummary = async (req, res) => {
